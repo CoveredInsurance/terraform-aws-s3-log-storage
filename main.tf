@@ -4,8 +4,9 @@ locals {
 }
 
 module "aws_s3_bucket" {
-  source  = "cloudposse/s3-bucket/aws"
-  version = "3.0.0"
+  #source  = "cloudposse/s3-bucket/aws"
+  #version = "3.0.0"
+  source   = "github.com/CoveredInsurance/terraform-aws-s3-bucket"
 
   bucket_name        = local.bucket_name
   acl                = var.acl
